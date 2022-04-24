@@ -36,7 +36,7 @@ class Player(QMainWindow):
             for name in files:
                 self.musicList.append(name.strip())
 
-            if(len(self.musicList) == 0 or self.musicList[0] == '\n'):
+            if(len(self.musicList) == 0 or self.musicList[0] == ''):
                 self.loadMusic()
             else:
                 mixer.music.load(self.musicList[0])
